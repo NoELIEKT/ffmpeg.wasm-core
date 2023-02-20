@@ -6,7 +6,11 @@ on:
   pull_request:
     branches:
       - n4.3.1-wasm
-
+  workflow_dispatch:
+    branches:
+      - n4.3.1-wasm
+      
+      
 env:
   FFMPEG_ST: yes
   DIST_PATH: wasm/packages/core-st/dist
